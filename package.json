@@ -1,0 +1,5 @@
+"scripts": {
+  "dev:server": "tsx watch src/server.ts",
+  "dev:worker": "tsx watch src/queues/invoiceWorker.ts",
+  "build": "tsc"
+}
