@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { invoiceQueue } from '../queues/invoiceQueue.ts';
+import { invoiceQueue } from '../queues/invoiceQueue.js';
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(

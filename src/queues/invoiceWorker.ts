@@ -1,5 +1,5 @@
 import { Worker, Job } from 'bullmq';
-import { redisConnection } from '../config/redis.ts';
+import { redisConnection } from '../config/redis.js';
 import { createClient } from '@supabase/supabase-js';
 import dotenv from 'dotenv';
 
