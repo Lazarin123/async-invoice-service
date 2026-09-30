@@ -1,12 +1,12 @@
-import IORedis from 'ioredis';
+import { Redis } from 'ioredis';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
 
-// BullMQ exige maxRetriesPerRequest como null e enableReadyCheck como false
-export const redisConnection = new IORedis(redisUrl, {
+// Usando o tipo Redis e importação correta para módulos ES
+export const redisConnection = new Redis(redisUrl, {
   maxRetriesPerRequest: null,
   enableReadyCheck: false,
 });
